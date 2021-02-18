@@ -1,0 +1,81 @@
+:root {
+    --uzOrange: 255, 80, 54; 
+    --uzBlue: 37, 45, 108; 
+    --uzSand: 249, 243, 237;
+    --uzWhite: 255, 255, 255;
+    --uzDarkGray: 104, 120, 130;
+}
+
+body {
+	/*font-family: Inter, sans-serif;*/
+	/*color: rgb(var(--uzBlue));*/
+}
+
+/* Expand menu button */
+.sidebar-toggle span {
+	background-color: rgb(var(--uzOrange));
+}
+
+button.sidebar-toggle {
+	background-color: rgb(var(--uzSand));
+}
+
+body.close button.sidebar-toggle {
+	background-color: rgb(var(--uzWhite));
+}
+
+/* Sidebar */
+.sidebar {
+	background-color: rgb(var(--uzSand));
+}
+
+.sidebar li>p {
+	color: rgb(var(--uzBlue));
+}
+
+.sidebar ul li>p>a {
+	color: rgb(var(--uzBlue));
+	font-weight: bold;
+}
+
+.sidebar ul li>a {
+	/*color: rgb(var(--uzBlue));*/
+}
+
+.sidebar ul li.active>a {
+	color: rgb(var(--uzOrange));
+}
+
+.sidebar {
+	border-right-color: rgba(var(--uzBlue),0.3);
+}
+
+/* Titles */
+.anchor span {
+	color: rgb(var(--uzBlue));
+}
+
+/* Block quotes */
+.markdown-section blockquote {
+	border-left-color: rgb(var(--uzOrange));
+}
+
+.markdown-section em {
+	color: rgb(var(--uzDarkGray));
+}
+
+/* Texts */
+.markdown-section a {
+	color: rgb(var(--uzBlue));
+	text-decoration: none;
+}
+
+.markdown-section a.anchor span {
+	color: rgb(var(--uzBlue));
+	font-size: 1.5rem;
+}
+
+.markdown-section a.anchor span code{
+	font-size: 1.2rem;
+	background-color: rgb(var(--uzWhite));: 
+}
