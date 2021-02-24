@@ -1,4 +1,3 @@
-* [Home](/)
 * iOS SDK Guides
 	* [Quick start](ios/sdk-ios-setup)
 	* [Custom tags](ios/sdk-ios-custom-tags)
