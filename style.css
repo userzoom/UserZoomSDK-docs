@@ -104,6 +104,12 @@ aside.sidebar {
 	padding-top: 0;
 }
 
+h1.app-name {
+	text-align: left;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
 /* Titles */
 .markdown-section a.anchor span {
 	color: rgb(var(--uzTitlesColor));
