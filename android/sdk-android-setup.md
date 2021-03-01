@@ -4,50 +4,18 @@
 
 # Adding UserZoom SDK to the project
 
-> ***Note:*** *Currently the GitHub Packages requires us to Authenticate to download an Android Library (Public or Private) hosted on the GitHub Package. This might change for future releases.*
-
-## Step 1: Generate a Personal Access Token for GitHub
-Inside you GitHub account: Settings -> Developer Settings -> Personal Access Tokens -> Generate new token 
-
-Make sure you select the following scope **“read:packages”** and Generate a token.
-
-> ***⚠️ WARNING:  After generating the token make sure to copy your new personal access token. You won't be able to see it again, the only option is to generate a new key***.
-
-## Step 2: Store your GitHub — Personal Access Token details
-- Create a **github.properties** file within your root Android project.  
-> ***Note:*** *In case of a public repository make sure you add this file to .gitignore to keep the token private.*   
-- Add properties **gpr.usr** and **gpr.key** to the file  
->**github.properties**
->```
->gpr.usr=GITHUB_USERID
->gpr.key=PERSONAL_ACCESS_TOKEN
->```
-> ***Note:*** *Replace GITHUB_USERID with personal / organisation Github User ID and PERSONAL_ACCESS_TOKEN with the token generated in Step 1.*  
-- (Optional) Alternatively you can add the GPR_USER and GPR_API_KEY values to your environment variables on you local machine or build server to avoid creating a github properties file.
-
-## Step 3 : Update build.gradle inside the application module
+## Update build.gradle inside the application module
 Add the following code to build.gradle inside the app module that will be using the library published on GitHub Packages
 
 >**build.gradle**  
 >```gradle
->allprojects {
->
->    def githubProperties = new Properties()
->    githubProperties.load(new FileInputStream(rootProject.file("github.properties")))
->
+> allprojects {
 >    repositories {
 >        google()
 >        jcenter()
->        maven {
->            name = "GitHubPackages"
->            url = uri("https://maven.pkg.github.com/UserZoomDev/UserzoomSDK-Android")
->            credentials {
->                username = githubProperties['gpr.usr'] ?: System.getenv("GPR_USER")
->                password = githubProperties['gpr.key'] ?: System.getenv("GPR_API_KEY")
->            }
->        }
+>        maven { url "https://maven.pkg.github.com/userzoom/UserZoomSDK-Android" }
 >    }
->}
+> }
 >```
 
 ---
