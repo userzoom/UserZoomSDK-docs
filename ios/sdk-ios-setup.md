@@ -1,6 +1,8 @@
 # Initial Setup
 
->***Note: This document provides the necessary steps to integrate the UserZoom SDK into an iOS project, presuming Xcode is being used for the iOS development. The UserZoom SDK requires iOS 11.0 or higher.*** 
+>*Note: This document provides the necessary steps to integrate the UserZoom SDK into an iOS project, presuming Xcode is being used for the iOS development.* 
+
+>**Note: This SDK requires iOS 13.0 or greater.**
 
 ## Adding the SDK via CocoaPods
 
