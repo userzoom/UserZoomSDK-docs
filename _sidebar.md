@@ -1,5 +1,6 @@
 * iOS SDK Guides
 	* [Quick start](ios/sdk-ios-setup)
+	* [Migration guide](ios/sdk-ios-migration)
 	* [Custom tags](ios/sdk-ios-custom-tags)
 	* [Security](ios/sdk-ios-security)
 	* [Advanced settings (Optional)](ios/sdk-ios-advanced-settings)
@@ -10,6 +11,7 @@
 
 * Android SDK Guides
 	* [Quick start](android/sdk-android-setup)
+	* [Migration guide](android/sdk-android-migration)
 	* [Tag events](android/sdk-android-custom-tags)
 	* [Security](android/sdk-android-security)
 	* [Advanced settings (Optional)](android/sdk-android-advanced-settings)
