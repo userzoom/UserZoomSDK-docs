@@ -2,6 +2,8 @@
 
 > *Note: This document provides the necessary steps to integrate the UserZoom SDK into an Android project, presuming Android Studio is being used for the Android development.*
 
+> **Note: This SDK requires Android API version 26 or greater.**
+
 # Adding UserZoom SDK to the project
 
 ## Update build.gradle inside the application module
@@ -42,7 +44,7 @@ Add the following Android components in the App's `AndroidManifest.xml` file, wi
 
 We encourage to use our default `android:theme` for that, define on your resources file a new `style` coping the code below and applying the new style `Theme.AppCompat.Translucent` to the `UserzoomActivty` on already added `AndroidManifest.xml`.
 
->**AndroidManifest.xml**
+>**res/values/styles.xml**
 >```xml
 ><resources>
 >    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.Light.NoActionBar">
