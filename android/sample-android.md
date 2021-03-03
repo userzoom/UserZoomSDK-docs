@@ -40,6 +40,6 @@ Here you will find a sample application with the UserZoom SDK integrated and a g
 > #### Step 6. Run the app
 >
 
-[sample-app-url]: https://github.com
+[sample-app-url]: https://github.com/userzoom/UZWikipediaDemo-Android
 [git-token-creation]: android/sdk-android-setup?id=step-1-generate-a-personal-access-token-for-github
 [git-token-file]:android/sdk-android-setup?id=step-2-store-your-github-personal-access-token-details
