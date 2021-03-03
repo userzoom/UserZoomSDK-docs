@@ -49,7 +49,7 @@ Here you will find a sample application with the UserZoom SDK integrated and a g
 >
 
 
-[sample-app-url]: https://github.com
+[sample-app-url]: https://github.com/userzoom/UZWikipediaDemo-Android
 [app-url-scheme]: images/ios-demo-scheme.png
 [app-target-location]: ./images/ios-demo-target-location.png
 [app-target-selection]: ./images/ios-demo-target-selection.png
