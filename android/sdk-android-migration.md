@@ -15,7 +15,7 @@ Add the following code to build.gradle inside the app module that will be using 
 >    repositories {
 >        google()
 >        jcenter()
->        maven { url "https://raw.githubusercontent.com/userzoom/UserZoomSDK-Android" }
+>        maven { url "https://raw.githubusercontent.com/userzoom/UserZoomSDK-Android/master" }
 >    }
 > }
 >```
