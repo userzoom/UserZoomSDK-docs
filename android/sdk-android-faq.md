@@ -36,7 +36,7 @@ Basically, we get the touches and the gestures that the user makes on the device
 It is not obligatory as long as you make sure that in all tasks from the study the video and audio are disabled. Otherwise, if these permissions are not added the app might crash. Our recommendation is to add it as part of the integration process.
 
 ## How do you block specific sections of the app that contains sensible data? (e.g. sign in page)
-In order to interrupt and resume Userzoom from visually collecting views on certain areas of your app, we have the `blockRecord` method.  ([Section 6 - Readme file][section6]).
+In order to interrupt and resume Userzoom from visually collecting views on certain areas of your app, we have the `blockRecord` method.  ([documentation: block record][section6]).
 
 ## What's the purpose of the `finalizeStudy` method?
 It is optional and is used when you want to suddenly end the study (for example if the user reaches some specific Activity or some event happens during the study). In case it's not used, the study will be automatically close once it's finished. Take into account that if you use this function the participant that was interrupted will be marked as `Incomplete` in the study results.
@@ -72,7 +72,7 @@ You should use this function when testing your integration. Once a participant c
 Our recommendation is to only use the logs within your testing environment to see how your app behaves with our SDK but not when releasing your app.
 
 ## What devices & OS versions are recommended for testing coverage?
-Any device that runs at least the minimum supported version of Android can run our SDK. To know which is the minimum supported version, check out our [Readme file][requirements].
+Any device that runs at least the minimum supported version of Android can run our SDK. To know which is the minimum supported version, check out our [help center article][requirements].
 
 ## Is there any way that Userzoom could capture and pass data on which participant has completed the intercept survey back to the app?
 All results are only stored in Userzoom Manager and are not accessible from outside. The transfer of data between your app and Userzoom is only in one way (collect the participant's data), so it's not possible to receive the study results directly into the app.
@@ -80,9 +80,6 @@ All results are only stored in Userzoom Manager and are not accessible from outs
 ## Should the string passed to `initWithTag()` and `Show()` always be the same?
 No. The tag code that you have to add in the `initWithTag` function is the one that you get from the 'Manage SDK Integration' section in the Mobile Apps Library. This tag code is always linked with the study whose starting method is `Start App`. In case you don't want to start a study at the beginning but at some specific section, you can simply unlink the study or segment from this tag in the Mobile Apps Library and then after the init function declare the Show function with the corresponding tag.
 
-## Is there an API reference for the SDK integration code?
-All functions that can be used are the ones that appear in the [Readme file][readme].
 
-[requirements]: https://github.com/userzoom/UserzoomSDK/tree/master/Native/Android#android-sdk-requirements
-[section6]: https://github.com/userzoom/UserzoomSDK/tree/master/Native/Android#6-security
-[readme]: https://github.com/userzoom/UserzoomSDK/tree/master/Native/Android
+[requirements]: https://help.userzoom.com/hc/en-us/articles/360000660898
+[section6]: https://userzoom.github.io/UserZoomSDK-docs/#/android/sdk-android-security
