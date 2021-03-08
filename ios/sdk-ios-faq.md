@@ -60,7 +60,6 @@ We swizzle the following methods:
 * `viewWillDisappear` from the `UIViewController` class. [More info](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621485-viewwilldisappear)
 * `show` from the `UIAlertView` class. [More info](https://developer.apple.com/documentation/uikit/uialertview/1620751-show)
 
-Also, if you use Unity or Phonegap/Cordova applications, we're also swizzling additional methods to make the integration viable. That code is visible on the github repository, but we can straighten it out if needed.
 
 ## Is it possible to have more than one `{YourAppTag}` in the app?
 Yes, you can but you have to make sure that both studies are completely isolated (there cannot be 2 studies at the same time).
@@ -87,7 +86,7 @@ You should use this function when testing your integration. Once a participant c
 Our recommendation is to only use the logs within your testing environment to see how your app behaves with our SDK but not when releasing your app.
 
 ## What devices & OS versions are recommended for testing coverage?
-Any device that runs at least the minimum supported version of iOS can run our SDK. To know which is the minimum supported version, check out our [Readme file][requirements].
+Any device that runs at least the minimum supported version of iOS can run our SDK. To know which is the minimum supported version, check out our [help center article][requirements].
 
 ## Is there any way that Userzoom could capture and pass data on which participant has completed the intercept survey back to the app?
 All results are only stored in Userzoom Manager and are not accessible from outside. The transfer of data between your app and Userzoom is only in one way (collect the participant's data), so it's not possible to receive the study results directly into the app.
@@ -95,9 +94,6 @@ All results are only stored in Userzoom Manager and are not accessible from outs
 ## Should the string passed to `initWithTag()` and `Show()` always be the same?
 No. The tag code that you have to add in the `initWithTag` function is the one that you get from the 'Manage SDK Integration' section in the Mobile Apps Library. This tag code is always linked with the study whose starting method is `Start App`. In case you don't want to start a study at the beginning but at some specific section, you can simply unlink the study or segment from this tag in the Mobile Apps Library and then after the init function declare the Show function with the corresponding tag.
 
-## Is there an API reference for the SDK integration code?
-All functions that can be used are the ones that appear in the [Readme file][readme].
 
-[requirements]: https://github.com/userzoom/UserzoomSDK/tree/master/Native/iOS/ObjC#requirements
-[section7]: https://github.com/userzoom/UserzoomSDK/tree/master/Native/iOS/ObjC#7-security
-[readme]: https://github.com/userzoom/UserzoomSDK/tree/master/Native/iOS/ObjC
+[requirements]: https://help.userzoom.com/hc/en-us/articles/360000660898
+[section7]: https://userzoom.github.io/UserZoomSDK-docs/#/ios/sdk-ios-security
