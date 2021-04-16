@@ -11,6 +11,9 @@ To integrate UserzoomSDK into your Xcode project using CocoaPods, specify it in 
 ```
 pod 'UserzoomSDK', :git => 'git@github.com:userzoom/UserZoomSDK-iOS.git'
 ```
+
+> ***Note: might want to look at this FAQS: [How do i create a podfile?](ios/sdk-ios-faq#how-do-i-create-a-podfile) or [How do i run a project with cocoapods?](ios/sdk-ios-faq#how-do-i-run-a-project-with-cocoapods)***
+
 ----
 ## Integrating the SDK into your app
 

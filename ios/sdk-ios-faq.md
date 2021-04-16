@@ -23,8 +23,8 @@ This is a list of common questions about Userzoom SDK. If you cannot find an ans
 - [What devices & OS versions are recommended for testing coverage?](#what-devices-os-versions-are-recommended-for-testing-coverage)
 - [Is there any way that Userzoom could capture and pass data on which participant has completed the intercept survey back to the app?](#is-there-any-way-that-userzoom-could-capture-and-pass-data-on-which-participant-has-completed-the-intercept-survey-back-to-the-app)
 - [Should the string passed to `initWithTag()` and `Show()` always be the same?](#should-the-string-passed-to-initwithtag-and-show-always-be-the-same)
-- [Is there an API reference for the SDK integration code?](#is-there-an-api-reference-for-the-sdk-integration-code)
-
+- [How do i create a podfile?](#how-do-i-create-a-podfile)
+- [How do i run a project with cocoapods?](#how-do-i-run-a-project-with-cocoapods)
 <!-- /TOC -->
 
 ## What local notifications are you actually using and how does that work for the SDK?
@@ -41,7 +41,7 @@ To capture these events we use the Swizzling method (http://nshipster.com/method
 It is not obligatory as long as you make sure that in all tasks from the study the video and audio are disabled. Otherwise, if these permissions are not added the app might crash. Our recommendation is to add it as part of the integration process.
 
 ## How do you block specific sections of the app that contains sensible data? (e.g. sign in page)
-In order to interrupt and resume Userzoom from visually collecting views on certain areas of your app, we have the `blockRecord` method.  ([Section 7 - Readme file][section6]).
+In order to interrupt and resume Userzoom from visually collecting views on certain areas of your app, we have the `blockRecord` method.  ([Section 7 - Readme file][section7]).
 
 ## What's the purpose of the `finalizeStudy` method?
 It is optional and is used when you want to suddenly end the study (for example if the user reaches some specific Activity or some event happens during the study). In case it's not used, the study will be automatically close once it's finished. Take into account that if you use this function the participant that was interrupted will be marked as `Incomplete` in the study results.
@@ -93,6 +93,26 @@ All results are only stored in Userzoom Manager and are not accessible from outs
 
 ## Should the string passed to `initWithTag()` and `Show()` always be the same?
 No. The tag code that you have to add in the `initWithTag` function is the one that you get from the 'Manage SDK Integration' section in the Mobile Apps Library. This tag code is always linked with the study whose starting method is `Start App`. In case you don't want to start a study at the beginning but at some specific section, you can simply unlink the study or segment from this tag in the Mobile Apps Library and then after the init function declare the Show function with the corresponding tag.
+
+## How do i create a podfile?
+1. Install cocoapods if you don't have it already following [this guide](https://guides.cocoapods.org/using/getting-started.html#installation)
+2. Open a terminal window
+3. Go to your app directory
+4. Run the command `pod init`
+
+To add any cocoapod dependecies, open the new podfile created on your app directory with any text editor.
+
+For more detailed information about how setup cocoapods and the podfile please take a look to their official docs (https://guides.cocoapods.org/using/using-cocoapods.html)
+
+
+## How do i run a project with cocoapods?
+To run the project follow this steps:
+1. Open a terminal window
+2. Go to your app directory
+3. Run the command `pod install`
+4. Open the application project via the new YourAppName.xcworkspace file (the white one, not the blue one that you usually use)
+
+For more detailed information about how to use cocoapods please take a look to their official docs (https://guides.cocoapods.org/using/using-cocoapods.html)
 
 
 [requirements]: https://help.userzoom.com/hc/en-us/articles/360000660898
