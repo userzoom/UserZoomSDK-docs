@@ -23,8 +23,8 @@ This is a list of common questions about Userzoom SDK. If you cannot find an ans
 - [What devices & OS versions are recommended for testing coverage?](#what-devices-os-versions-are-recommended-for-testing-coverage)
 - [Is there any way that Userzoom could capture and pass data on which participant has completed the intercept survey back to the app?](#is-there-any-way-that-userzoom-could-capture-and-pass-data-on-which-participant-has-completed-the-intercept-survey-back-to-the-app)
 - [Should the string passed to `initWithTag()` and `Show()` always be the same?](#should-the-string-passed-to-initwithtag-and-show-always-be-the-same)
-- [How do i create a podfile?](#how-do-i-create-a-podfile)
-- [How do i run a project with cocoapods?](#how-do-i-run-a-project-with-cocoapods)
+- [How do I create a podfile?](#how-do-i-create-a-podfile)
+- [How do I run a project with cocoapods?](#how-do-i-run-a-project-with-cocoapods)
 <!-- /TOC -->
 
 ## What local notifications are you actually using and how does that work for the SDK?
@@ -94,7 +94,7 @@ All results are only stored in Userzoom Manager and are not accessible from outs
 ## Should the string passed to `initWithTag()` and `Show()` always be the same?
 No. The tag code that you have to add in the `initWithTag` function is the one that you get from the 'Manage SDK Integration' section in the Mobile Apps Library. This tag code is always linked with the study whose starting method is `Start App`. In case you don't want to start a study at the beginning but at some specific section, you can simply unlink the study or segment from this tag in the Mobile Apps Library and then after the init function declare the Show function with the corresponding tag.
 
-## How do i create a podfile?
+## How do I create a podfile?
 1. Install cocoapods if you don't have it already following [this guide](https://guides.cocoapods.org/using/getting-started.html#installation)
 2. Open a terminal window
 3. Go to your app directory
@@ -105,7 +105,7 @@ To add any cocoapod dependecies, open the new podfile created on your app direct
 For more detailed information about how setup cocoapods and the podfile please take a look to their official docs (https://guides.cocoapods.org/using/using-cocoapods.html)
 
 
-## How do i run a project with cocoapods?
+## How do I run a project with cocoapods?
 To run the project follow this steps:
 1. Open a terminal window
 2. Go to your app directory
