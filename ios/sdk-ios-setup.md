@@ -6,7 +6,7 @@
 
 ## Adding the SDK via Swift Package Manager
 
-To integrate UserzoomSDK into your Xcode project using Swift Package Manager, you need add the repository url UserzoomSDK in your package.swift file or in Xcode, select File ▸ Swift Packages ▸ Add Package Dependency… :
+To integrate the UserzoomSDK into your Xcode project using Swift Package Manager, you need to add the repository url UserzoomSDK in your package.swift file or in Xcode, select File ▸ Swift Packages ▸ Add Package Dependency... :
 
 ```
 https://github.com/userzoom/UserZoomSDK-iOS

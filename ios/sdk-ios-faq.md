@@ -25,7 +25,7 @@ This is a list of common questions about Userzoom SDK. If you cannot find an ans
 - [Should the string passed to `initWithTag()` and `Show()` always be the same?](#should-the-string-passed-to-initwithtag-and-show-always-be-the-same)
 - [How do I create a podfile?](#how-do-i-create-a-podfile)
 - [How do I run a project with cocoapods?](#how-do-i-run-a-project-with-cocoapods)
-- [How fix cocoapods could not find compatible versions for pod?](#how-fix-cocoapods-could-not-find-compatible-versions-for-pod)
+- [How do I fix cocoapods could not find compatible versions for pod?](#how-do-i-fix-cocoapods-could-not-find-compatible-versions-for-pod)
 <!-- /TOC -->
 
 ## What local notifications are you actually using and how does that work for the SDK?
@@ -116,9 +116,9 @@ To run the project follow this steps:
 For more detailed information about how to use cocoapods please take a look to their official docs (https://guides.cocoapods.org/using/using-cocoapods.html)
 
 
-## How fix CocoaPods could not find compatible versions for pod?
+## How do I fix cocoapods could not find compatible versions for pod?
 
-If when you run the command `pod install`, you are getting this fail: CocoaPods could not find compatible versions for pod "DatadogSDKObjC
+If when you run the command `pod install`, you are getting this error: CocoaPods could not find compatible versions for pod "DatadogSDKObjC
 
 Run the command `pod repo update` to fix it, and run the command `pod install` again.
 
