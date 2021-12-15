@@ -4,6 +4,14 @@
 
 >**Note: This SDK requires iOS 13.0 or greater.**
 
+## Adding the SDK via Swift Package Manager
+
+To integrate the UserzoomSDK into your Xcode project using Swift Package Manager, you need to add the repository url UserzoomSDK in your package.swift file or in Xcode, select File ▸ Swift Packages ▸ Add Package Dependency... :
+
+```
+https://github.com/userzoom/UserZoomSDK-iOS
+```
+
 ## Adding the SDK via CocoaPods
 
 To integrate UserzoomSDK into your Xcode project using CocoaPods, specify it in your Podfile:
@@ -13,6 +21,14 @@ pod 'UserzoomSDK', :git => 'git@github.com:userzoom/UserZoomSDK-iOS.git'
 ```
 
 > ***Note: might want to look at this FAQs: [How do I create a podfile?](ios/sdk-ios-faq#how-do-i-create-a-podfile) or [How do I run a project with cocoapods?](ios/sdk-ios-faq#how-do-i-run-a-project-with-cocoapods)***
+
+## Adding the SDK via Carthage
+
+To integrate UserzoomSDK into your Xcode project using Carthage, specify it in your Cartfile:
+
+```
+github "userzoom/UserZoomSDK-iOS"
+```
 
 ----
 ## Integrating the SDK into your app
