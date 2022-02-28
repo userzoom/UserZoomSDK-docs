@@ -1,5 +1,5 @@
 # Userzoom iOS SDK Privacy Details
-* Privacy
+## Privacy
 
 The content set out below is provided for informational purposes only, in order to help you to fill out the Apple app privacy form. You are responsible for filling out the form correctly, and you will need to customize your responses to match your business. If you require advice on filling out the Apple app privacy form, please consult your legal counsel.
 
@@ -8,6 +8,7 @@ The Userzoom iOS SDK collects data to help us improve our products and prevent f
 The Userzoom iOS SDK collect analytics data. This includes (but is not limited to) the end user's device model, OS version, and other non-personally identifiable information. We use this information to improve our products.
 
 App privacy details on the App Store
+
 | Data type        | Is this data used?                                                                                                                                                                         | How is this data used?             | Is this data linked to the end user's identity?                         | Is this data used for tracking purposes?                   |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|-------------------------------------------------------------------------|------------------------------------------------------------|
 | User Content     | Audio Data: used for Analytics and App Functionality and linked to the user’s identity.<br>Other User Content: used for Analytics and App Functionality and linked to the user’s identity. | • App Functionality<br>• Analytics | Yes. Userzoom may link this data to the end user's identity.            | No. Userzoom does not use this data for tracking purposes. |
