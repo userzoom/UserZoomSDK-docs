@@ -3,6 +3,7 @@
 	* [Migration guide](ios/sdk-ios-migration)
 	* [Custom tags](ios/sdk-ios-custom-tags)
 	* [Security](ios/sdk-ios-security)
+	* [Apple App Privacy Requirements](ios/sdk-ios-apple-app-privacy)
 	* [Advanced settings (Optional)](ios/sdk-ios-advanced-settings)
 	* [Test the integration](ios/sdk-ios-integration-test)
 	* [Troubleshoot](ios/sdk-ios-troubleshoot)
