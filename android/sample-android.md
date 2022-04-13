@@ -5,9 +5,9 @@ Here you will find a sample application with the UserZoom SDK integrated and a g
 > #### Step 1. Download the sample app  
 > You will find the app source code on this [link][sample-app-url]
 >
-> #### Step 2. Setup your github personal access token
-> - Follow [this guide][git-token-creation] to setup your github personal access token
-> - Create a github properties file [(here's how)][git-token-file]
+> #### Step 2. Setup your GitHub personal access token
+> - Follow [this guide][git-token-creation] to setup your GitHub personal access token
+> - Create a GitHub properties file [(here's how)][git-token-file]
 >
 > #### Step 3. Open the sample project
 > - Open the sample application project
@@ -21,7 +21,7 @@ Here you will find a sample application with the UserZoom SDK integrated and a g
 >> UserzoomSDK.init(this,"UZ_TAG_INIT");
 >>```
 >
-> - (Optional) Add your study specific section tag on app/src/main/java/org/wikipedia/page/PageActivity.java by substituting `"UZ_TAG_SPECIFIC"` for your specfic section tag provided by your study administrator.
+> - (Optional) Add your study specific section tag on app/src/main/java/org/wikipedia/page/PageActivity.java by substituting `"UZ_TAG_SPECIFIC"` for your specific section tag provided by your study administrator.
 >
 >>**PageActivity.java**
 >>```java
