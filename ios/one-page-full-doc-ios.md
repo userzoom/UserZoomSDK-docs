@@ -273,14 +273,14 @@ Or use the Dictionary implementation:
 UserzoomSDK.addCustomVars(["{MyKey1}" : "{MyValue1}", "{MyKey2}" : "{MyValue2}"]);
 ```
  
->***⚠️ WARNING:  You need to cal that method*** *before* ***the study starts, otherwise the information will not be sent to the server.***
+>***⚠️ WARNING: You need to cal that method*** *before* ***the study starts, otherwise the information will not be sent to the server.***
 
 If you want to delete all information you have already input, add the following line to your code before starting the study:
 ```swift
 UserzoomSDK.clearCustomVars();
 ```
 
->***⚠️ WARNING:  You need to call this method*** *before* ***starting the study. If the study has already started, there is no way to clear that information.***
+>***⚠️ WARNING: You need to call this method*** *before* ***starting the study. If the study has already started, there is no way to clear that information.***
 
 ---
 
@@ -360,9 +360,9 @@ The integration of UserZoom’s SDK does not grant the Customer any right to use
 [cocoapods]: http://cocoapods.org
 [manager]: https://manager.userzoom.com
 [downloadLink]: https://github.com/userzoom/userzoom-sdk-ios
-[info]: ./images/info.png
-[schemes]: ./images/schemes.png
-[properties]: ./images/properties.png
+[info]: ./images/ios-target-info.png
+[schemes]: ./images/ios-target-url-scheme.png
+[properties]: ./images/ios-target-properties.png
 [tickets]: support@userzoom.com
 [faq]: ios/FAQ.md
 [terms]: https://s.userzoom.com/documents/UserZoom_Terms_of_Service.pdf

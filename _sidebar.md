@@ -14,7 +14,8 @@
 	* [License](android/sdk-android-license)
 
 * iOS
-	* [Quick start](ios/sdk-ios-setup)
+	* [Quick start](ios/quick-start.md)
+	* [Full integration](ios/sdk-ios-setup)
 	* [Migration guide](ios/sdk-ios-migration)
 	* [Custom tags](ios/sdk-ios-custom-tags)
 	* [Security](ios/sdk-ios-security)

@@ -49,10 +49,10 @@ UserzoomSDK.show(this, "QzUzMUE5NEQx");
 
 ## Result
 
-After the `show` method is called, you should see an intercepting pop-up like the one below:
+Few seconds after the `show` method is called, an intercepting pop-up should appear on the screen. You can find an example below:
 
 <img 
     alt="UserZoom intercept example"
-    src="/img/android-sdk-intercept.png"
+    src="/img/intercept-example.png"
     style="width: 50%; display:block; margin: auto;"
 />
