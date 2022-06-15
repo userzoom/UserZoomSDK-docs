@@ -42,7 +42,7 @@ github "userzoom/UserZoomSDK-iOS"
 
 In order to prepare the application to be able to **request camera and microphone permissions**, configuration keys need to be added. To do so, select the project within the Project Navigator, go to the `Info` section and scroll to the bottom of the menu. Then, expand the `Custom iOS Target Properties`.
 
-![properties]
+![Editing custom iOS target properties](../img/ios-target-properties.png)
 
 If you hover over the list, press the `+` button to add new properties. If they do not exist already, you need to create the following: `Privacy - Camera Usage Description` and `Privacy - Microphone Usage Description`. 
 > **Note:** Make sure their type is set as `String` and then type the value you want to show to users when the system requests video and audio permissions.
@@ -111,12 +111,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
 In order to prepare the application to be able to open invitation links, the URL Scheme needs to be added. To do so, select the project within the Project Navigator, go to the `Info` section and scroll to the bottom of the menu. Then, expand the `URL Types` and click on the `+` button to add a new URL Scheme.
 
-![][info]
+![Adding URL types to the target info]( ../img/ios-target-info.png)
 
 Finally, fill the `Identifier` and `URL schemes` fields by replacing `{YourURLScheme}` with the correct values, which can be provided by the study administrator.
 
-![][schemes]
-
-[info]: ../img/ios-target-info.png
-[schemes]: ../img/ios-target-url-scheme.png
-[properties]: ../img/ios-target-properties.png
+![Configuring the URL type](../img/ios-target-url-scheme.png)

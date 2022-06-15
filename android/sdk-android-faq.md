@@ -41,7 +41,7 @@ In order to interrupt and resume UserZoom from visually collecting views on cert
 ## What's the purpose of the `finalizeStudy` method?
 It is optional and is used when you want to suddenly end the study (for example if the user reaches some specific Activity or some event happens during the study). In case it's not used, the study will be automatically close once it's finished. Take into account that if you use this function the participant that was interrupted will be marked as `Incomplete` in the study results.
 
-## Do I need to call `FinalizeStudy()` before I can call `Show()` with a different tag?
+## Do I need to call `finalizeStudy()` before I can call `show()` with a different tag?
 No, if you use the `Show()` function in a different view where no study was called before, you can call it again with a different tag.
 
 ## Will `{YourAppTag}` change over time or is this a lifetime tag?
@@ -50,20 +50,20 @@ It will not change as long as you don't remove your app from the Mobile Apps Lib
 ## Is it possible to have more than one `{YourAppTag}` in the app?
 Yes, you can but you have to make sure that both studies are completely isolated (there cannot be 2 studies at the same time).
 
-## Will there be additional url schemes / deep linking in the future?
+## Will there be additional URL schemes / deep linking in the future?
 Each app you want to integrate has a unique URL scheme that can be obtained from the Mobile apps library. So when you integrate our SDK with your app you only have to set up one URL Scheme, and this code will not be changed as long as you keep your app registered in the Mobile apps library.
 
 ## How do we validate that the backend is receiving data from the participant?
 When you activate the logs in our SDK you can see if the data was sent or if there was any error. Also, when the participant completes the study the info will appear in the study results.
 
-## When and where to send events with tags?
+## When and where to send custom events?
 With the `sendEvent` method you can send additional events that are not automatically triggered (for example, when clicking on a specific button or doing some specific action, you can embed the sendEvent function there and send the event to UserZoom informing what button was clicked by adding it as a tag to the sendEvent method). This is very similar to using tags in any analytics tool like Google Analytics.
 
-## What are custom vars used for?
+## What are custom variables used for?
 They are used when you want to input additional information in run time (for example, some input field or data from the app). This data will then be available in the Results section in UserZoom Manager once the participant completes the study.
 
 ## When should we call `deactiveAppAfterStudy`?
-This one is used in case you want to automatically close your app when the participant finishes the study (it’s optional).
+The `deactiveAppAfterStudy` method enables the Invitation Link  exclusive mode. It prevents the users from using the application unless it's been open through an Invitation Link. This method is meant to be used for example when you wish to distribute a non-live version of your app and you want to ensure that it'll be used only during testing with UserZoom.
 
 ## Should we always call `clearExpirationData`? If so when and where?
 You should use this function when testing your integration. Once a participant completes a study, you can set up in the study settings from UserZoom Manager a expiration time (in days) so that user will not be asked again to take the study. If you use `clearExpirationData`, the app will not remember that you took the study and you will be prompted to take the same study again. It is similar to using cookies to store user's data. Usually, this function is only used when testing the integration to take the study as many times as you need.
@@ -77,7 +77,7 @@ Any device that runs at least the minimum supported version of Android can run o
 ## Is there any way that UserZoom could capture and pass data on which participant has completed the intercept survey back to the app?
 All results are only stored in UseZoom Manager and are not accessible from outside. The transfer of data between your app and UserZoom is only in one way (collect the participant's data), so it's not possible to receive the study results directly into the app.
 
-## Should the string passed to `initWithTag()` and `Show()` always be the same?
+## Should the string passed to `initWithTag()` and `show()` always be the same?
 No. The tag code that you have to add in the `initWithTag` function is the one that you get from the 'Manage SDK Integration' section in the Mobile Apps Library. This tag code is always linked with the study whose starting method is `Start App`. In case you don't want to start a study at the beginning but at some specific section, you can simply unlink the study or segment from this tag in the Mobile Apps Library and then after the init function declare the Show function with the corresponding tag.
 
 ## I can't compile my project due to some ProGuard warnings

@@ -2,7 +2,7 @@
 
 ## Logging levels
 
-Increase or decrease the amount of information displayed in logs by calling the `setDebugLevel` method with one of the following parameters just before the `init` call:
+Increase or decrease the amount of information displayed in logs by calling the `setDebugLevel` method with one of the following parameters just before the `init` or `show` call:
 
 ```Java
 UserzoomSDK.setDebugLevel(LOG_LEVEL.SILENT);     // (Default) disable all logs
@@ -43,12 +43,12 @@ UserzoomSDK.deactivateAppAfterStudy(this, "Your custom message", "Ok");
 
 In order to interrupt and resume UserZoom from visually collecting views on certain areas of the App, use the `blockRecord` method.  
 
-***To interrupt:***
+**To interrupt:**
 ```Java
 UserzoomSDK.blockRecord(true);
 ```
 
-***To resume:***
+**To resume:**
 
 ```Java
 UserzoomSDK.blockRecord(false);
@@ -200,7 +200,7 @@ UserzoomSDK.setIconResourceNotification(R.drawable.notification_icon);
 
 ## Custom variables
 
-In order to be able to input additional information in run time, you need to use custom vars. To do so, add the following line to your code before starting the study:
+In order to be able to input additional information in run time, you need to use custom variables. To do so, add the following line to your code before starting the study:
 
 ```Java
 UserzoomSDK.addCustomVar("{MyKey}", "{MyValue}");
