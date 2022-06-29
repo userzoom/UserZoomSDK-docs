@@ -1,10 +1,3 @@
-[TODO: 
-	- Add the "Introduction" section with "What is UserZoom?" and "Prerequisites" 
-	- Confirm the android/one-page-full-doc and the iOS counterpart can be deleted
-	- Get rid of the "Migration guide", "Test the integration" and "Troubleshoot" for both Android and iOS
-	-
-]: #
-
 * Android
 	* [Quick start](android/quick-start)
 	* [Full integration](android/full-integration)
