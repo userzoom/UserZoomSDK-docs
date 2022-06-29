@@ -42,7 +42,7 @@ Execute the following code anywhere in your app to launch the demo survey. It ma
 
 ``` swift
 UserzoomSDK.clearExpirationData(); // Use this method only when testing!
-UserzoomSDK.show("QzUzMUE5MEQx");
+UserzoomSDK.show("QzUzMUExMjdEMSAg");
 ```
 
 ## Result

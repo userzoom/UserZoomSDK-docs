@@ -42,7 +42,7 @@ Execute the following code anywhere in your app to launch the demo survey. It ma
 
 ``` java
 UserzoomSDK.clearExpirationData(); // Use this method only when testing!
-UserzoomSDK.show(this, "QzUzMUE5NEQx");
+UserzoomSDK.show(this, "QzUzMUExMjVEMSAg");
 ```
 
 > **Note:** The first argument of the `show` method (`this` keyword in the example above) should be an instance of `android.app.Activity` class.
