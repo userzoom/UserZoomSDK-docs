@@ -1,6 +1,4 @@
-# Initial Setup
-
-> *Note: This document provides the necessary steps to integrate the UserZoom SDK into an Android project, presuming Android Studio is being used for the Android development.*
+# Full Integration
 
 > **Note: This SDK requires Android API version 26 or greater.**
 
@@ -28,7 +26,7 @@ Add the following code to build.gradle inside the app module that will be using 
 
 
 ----
-# Integrate Userzoom SDK into your app
+# Integrate UserZoom SDK into your app
 
 ## Add the UserZoom's Android components and permissions in AndroidManifest.xml
 
@@ -73,7 +71,7 @@ Also, ensure the following Android permissions are declared within the `manifest
 ><uses-feature android:name="android.hardware.camera.autofocus"  android:required="false"/>
 >```
 
-## Initialize the Userzoom SDK
+## Initialize the UserZoom SDK
 
 ### Default initialization
 
@@ -135,4 +133,3 @@ In order to prepare the application to be able to open invitation links, the **U
 >```
 
 Fill the `android:scheme` field by replacing `{YourURLScheme}` with the correct value, which will be provided by the study administrator.
-

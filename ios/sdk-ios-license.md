@@ -11,7 +11,7 @@ The dealings with the participants (or any other possible user) interacting with
 The UserZoom website, UserZoom SDKs and UserZoom Applications are the property of UserZoom and violation of any intellectual property right connected thereto is deemed as copyright infringement. The Service is not sold to the Customer by approving these Terms of Use, through the integration with any software application or by using a UserZoom Application, and UserZoom retains ownership of the Service and the code on which the Service is based.
 
 The Customer must not change, modify, adapt or alter the Service or change, modify or alter another website or service so as to falsely imply that it is associated with the Service or UserZoom.
-The integration of UserZoom’s SDK does not grant the Customer any right to use UserZoom’s domain names, service marks, logos or any other features attributable to UserZoom.
+The integration of UserZoom's SDK does not grant the Customer any right to use UserZoom’s domain names, service marks, logos or any other features attributable to UserZoom.
 
 
 [terms]: https://s.userzoom.com/documents/UserZoom_Terms_of_Service.pdf
