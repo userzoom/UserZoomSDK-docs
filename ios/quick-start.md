@@ -51,7 +51,7 @@ Few seconds after the `show` method is called, an intercepting pop-up should app
 
 <img 
     alt="UserZoom intercept example"
-    src="/img/intercept-example.png"
+    src="../img/intercept-example.png"
     style="width: 50%; display:block; margin: auto;"
 />
 
