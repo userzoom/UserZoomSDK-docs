@@ -12,7 +12,7 @@
 Here you will find a sample application with the UserZoom SDK integrated for the [iOS][ios-sample-guide] platform, and also for the [Android][android-sample-guide] platform.
 
 
-[ios-sdk-guide]: ios/sdk-ios-setup.md
-[android-sdk-guide]: android/sdk-android-setup.md
+[ios-sdk-guide]: ios/quick-start.md
+[android-sdk-guide]: android/quick-start.md
 [ios-sample-guide]: ios/sample-ios.md
 [android-sample-guide]: android/sample-android.md
