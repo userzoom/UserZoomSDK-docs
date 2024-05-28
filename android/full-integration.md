@@ -123,7 +123,7 @@ In order to prepare the application to be able to open invitation links, the **U
 ><activity android:name="com.userzoom.sdk.presentation.UserzoomActivity"
 >    android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
 >    android:theme="@style/Theme.AppCompat.Translucent" >
->    <intent-filter>
+>    <intent-filter android:autoVerify="true">
 >        <action android:name="android.intent.action.VIEW" />
 >        <category android:name="android.intent.category.DEFAULT" />
 >        <category android:name="android.intent.category.BROWSABLE" />
