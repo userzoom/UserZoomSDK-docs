@@ -6,14 +6,31 @@ This section contains necessary steps to display a demo UserZoom survey within y
 
 ## Installation
 
-Add the following code to your **build.gradle** configuration.
+Add the following code to your **settings.gradle** configuration.
 
-**build.gradle**  
+**settings.gradle**  
 ``` gradle
-allprojects {
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+
+        maven { url "https://raw.githubusercontent.com/userzoom/UserZoomSDK-Android/master" }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
-        jcenter()
+        mavenCentral()
+
         maven { url "https://raw.githubusercontent.com/userzoom/UserZoomSDK-Android/master" }
     }
 }
