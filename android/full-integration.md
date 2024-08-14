@@ -4,15 +4,32 @@
 
 # Adding UserZoom SDK to the project
 
-## Update build.gradle inside the application module
-Add the following code to build.gradle inside the app module that will be using the library published on GitHub Packages
+## Update settings.gradle inside the application module
+Add the following code to settings.gradle inside the app module that will be using the library published on GitHub Packages
 
->**build.gradle**  
+>**settings.gradle**  
 >```gradle
-> allprojects {
+> pluginManagement {
+>    repositories {
+>        google {
+>            content {
+>                includeGroupByRegex("com\\.android.*")
+>                includeGroupByRegex("com\\.google.*")
+>                includeGroupByRegex("androidx.*")
+>            }
+>        }
+>        mavenCentral()
+>        gradlePluginPortal()
+> 
+>        maven { url "https://raw.githubusercontent.com/userzoom/UserZoomSDK-Android/master" }
+>    }
+> }
+> dependencyResolutionManagement {
+>    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
 >    repositories {
 >        google()
->        jcenter()
+>        mavenCentral()
+> 
 >        maven { url "https://raw.githubusercontent.com/userzoom/UserZoomSDK-Android/master" }
 >    }
 > }
